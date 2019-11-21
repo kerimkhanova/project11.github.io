@@ -80,7 +80,7 @@ function images(imageLink) {
     imagePopup.append(imagePopupImage);
 
     const imagePopupClose = document.createElement('img');
-    imagePopupClose.setAttribute('src', './images/close.svg');
+    imagePopupClose.setAttribute('src', `<%=require('./images/close.svg')%>`);
     imagePopupClose.classList.add('image-popup__close');
     imagePopupImage.append(imagePopupClose);
 
