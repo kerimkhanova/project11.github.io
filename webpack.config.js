@@ -40,16 +40,7 @@ module.exports = {
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
-                use: [
-                    'file-loader?name=../fonts/[name].[ext]',
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            limit: 10000,
-                            outputPath: 'fonts/',
-                        }
-                    }
-                ]
+                loader: 'file-loader?name=./vendor/[name].[ext]'
             }
         ]
     },

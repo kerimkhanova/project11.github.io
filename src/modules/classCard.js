@@ -79,8 +79,7 @@ function images(imageLink) {
     imagePopupImage.setAttribute('style', `background-image: url(${imageLink}`);
     imagePopup.append(imagePopupImage);
 
-    const imagePopupClose = document.createElement('img');
-    imagePopupClose.setAttribute('src', `<%=require('./images/close.svg')%>`);
+    const imagePopupClose = document.createElement('div');
     imagePopupClose.classList.add('image-popup__close');
     imagePopupImage.append(imagePopupClose);
 
